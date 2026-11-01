@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230b0b0b'/%3E%3Crect x='2' y='3' width='5' height='3' fill='%232f6bff'/%3E%3Crect x='6' y='7' width='5' height='3' fill='%23f29d1f'/%3E%3Crect x='9' y='11' width='5' height='3' fill='%23f4f1ea'/%3E%3C/svg%3E">
+<title>Fifty-Three Cells · a live process-music machine for up to 12 players, with visuals for the big screen</title>
+<meta name="description" content="Fifty-Three Cells: up to twelve players walk through fifty-three short cells over a steady pulse, at their own speed. Your own samples with start and end trim, and a live visuals output for a projector or signage screen. A homage to the 1964 minimalist piece In C; no score is reproduced.">
+<meta property="og:title" content="Fifty-Three Cells"><meta property="og:description" content="Twelve players, fifty-three cells, one pulse, and live visuals for the big screen."><meta property="og:image" content="screenshots/split.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Libre+Franklin:wght@400;600;900&family=Archivo:wght@400;700;800;900&family=Archivo+Narrow:wght@400;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&family=Bebas+Neue&family=Playfair+Display:wght@700;900&family=Inter:wght@400;800&display=swap">
+<link rel="stylesheet" href="css/kit.css"><link rel="stylesheet" href="css/live.css">
+</head>
+<body class="lay-split"><noscript>This music machine needs JavaScript and Web Audio (Chrome or Edge).</noscript>
+<main id="mm-stage"><div id="view"><canvas id="cv"></canvas></div>
+<div id="side"><div class="bt"><button id="b-u">U · unison</button><button id="b-e">E · ending</button><button id="b-n">N · new cells</button><button id="b-r">0 · restart</button><button id="b-p">P · pulse</button></div>
+<h3>Ensemble</h3><div id="c0"></div><h3>The rules</h3><div id="c1"></div><h3>Colour</h3><div id="c2"></div>
+<h3>Cell editor</h3><div><span id="cellno">CELL 1</span> · click a cell on the strip, then type semitones:eighths (- for a rest)<br><input id="cell" type="text" spellcheck="false"><div class="bt" style="margin-top:4px"><button id="b-prev">◀</button><button id="b-next">▶</button><button id="b-hear">Hear</button></div></div></div></main>
+<script src="js/meta.js"></script>
+<script src="js/mm-kit.js"></script>
+<script src="js/mmx-deck.js"></script>
+<script src="js/cells.js"></script>
+<script src="js/vj-engine.js"></script>
+<script src="js/live.js"></script>
+</body></html>
